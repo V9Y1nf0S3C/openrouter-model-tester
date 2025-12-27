@@ -1,0 +1,16 @@
+#!/bin/bash
+# Move to the folder where this script is located
+cd -- "$(dirname "$0")"
+printf "\e]0;OpenRouter GUI\a"
+# Run the python script
+python3 gui.py
+
+# Keep the window open until you press Enter
+echo ""
+echo "-----------------------------------"
+# echo "Process finished. Press Enter to close."
+# read
+
+# This line is what stops it from jumping to [Process completed] immediately
+# read -p "Process finished. Press Enter to close..."
+# echo "Hello World" | pbcopy
